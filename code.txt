@@ -1,0 +1,46 @@
+int[] nums = { 54, 7, 2, 4, 2, 89, 33, 12 };
+int b = 150;
+int a = 0;
+
+int temp = 0;
+for (int i = 0; i < 7; i++){
+    for (int j = i + 1; j < 8; j++)
+    {
+        if (nums[i] > nums[j])
+        {
+            temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
+        }
+    }
+}
+
+for (int i = 0; i < 8; i++){
+    Console.WriteLine(nums[i]);
+}
+
+double a =23;
+double b =23;
+double c =24;
+
+if(b == c){
+   Console.WriteLine(b + c);
+}  else {
+      Console.Write(0);
+      }
+
+if(a == b) {
+    Console.WriteLine(b + a);
+}
+
+if(1 > 2){
+    boolean a = (1 + 2) < (2 + 3);
+    double b = 4.2;
+    Console.WriteLine(a);
+    Console.WriteLine(b);
+} else {
+    a = 0;
+    Console.WriteLine(a);
+}
+
+
